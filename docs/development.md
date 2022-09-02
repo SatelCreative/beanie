@@ -31,8 +31,12 @@ To run commands like `pytest` or `black` you have to run them using the virtual 
 
 ### Database connection
 
-To run tests, and use Beanie in general, you will need an accessible MongoDB database. To use migrations you will need a connection to a Replica Set or Mongos instance. All tests assume that the database is hosted localy on port 27017 and does not require authentication.
+To run tests, and use Beanie in general, you will need an accessible MongoDB database. To use migrations you will need a connection to a Replica Set or Mongos instance. All tests assume that the database is hosted locally on port 27017 and does not require authentication.
 
+One option is to use the included `docker-compose.yml` to start a local MongoDB instance:
+```shell
+docker compose up -d
+```
 
 ## Testing
 

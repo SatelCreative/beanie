@@ -1,0 +1,25 @@
+{
+  // python general
+  "[python]": {
+    "editor.tabSize": 4,
+  },
+  // hide cache files
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+  },
+  // black
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  // pyright
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticMode": "workspace",
+  // pytest
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": [
+    "--no-cov"
+  ],
+}
